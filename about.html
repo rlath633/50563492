@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+
+<body>
+<!----nav bar-->
+    <p style="background-image: url('images/backdrop.png');"></p>
+   
+    <section class="header">
+        <nav>
+           <a href="index.html"><p>Riget Zoo Adventures</p></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+           <ul>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="about.html">About</a></button>
+                    <div class="dropdown-content">
+                      <a href="#">Zoo</a>
+                      <a href="#">Hotel</a>
+                      <a href="#">Educational</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Zoo</button>
+                    <div class="dropdown-content">
+                      <a href="bookzoo.html">Book a Visit</a>
+                      <a href="bookedzoo.html">Book Educational Visit</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Hotel</button>
+                    <div class="dropdown-content">
+                      <a href="bookhotel.html">Book a Stay</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn"><a href="newsevents.html">News & Events</a></button>
+
+                  <div class="dropdown">
+                    <button class="dropbtn"><a href="contact.html">Contact</a></button>
+                  </div>
+
+                  <div class="dropdown">
+                    <button class="dropbtn">Account</button>
+                    <div class="dropdown-content">
+                      <a href="login.html">Log In</a>
+                      <a href="signin.html">Sign In</a>
+                    </div>
+                  </div>
+           </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showmenu()"</i>
+        </nav>
+
+<div class="aboutrza">
+    <H1>About Riget Zoo Adventures</H1>
+    <p>Riget Zoo Adventures (RZA) is a Zoo & Hotel offering multiple attractions and facilities for everyone to enjoy! RZA is also a multipurpose organisation, bringing endangered or unhealthy species from the wild and giving them a free-reign sancurary best suited for each type of animal, aswell as caring and monitering their health to either be kept here to live a long and happy life, or to be rehabilitated back to the wild. RZA was founded by Rosie Riget-Latham in 1989, which started as a small Animal Sancurary for endangered wildlife, and later in 1992 opened as a Safari-Style Zoo, being one of the first in the United Kingdom. Now today, Riget Zoo Adventure is now homing over 100 different species of animals from all over the world, and has over 120 different facilities and attractions for everyone to enjoy, aswell in the last decade, The Hotel opened, offering Safari-Themed rooms, clubhouses, swimming pools and much more.</p>
+</div>  
+
+
+ <div class="aboutzoo">
+    <h1>About the Zoo</h1>
+    <p>At Riget Zoo Adventures, we bring the wonders of the wild to you through our unique safari-style zoo experience. Situated in the heart of nature, our zoo is dedicated to creating unforgettable encounters with a diverse range of exotic animals. Whether you're a nature enthusiast, a family looking for a fun day out, or a group seeking an educational adventure, Riget Zoo Adventures has something for everyone.</p>
+    <p>Our mission at Riget Zoo Adventures is to inspire a love for wildlife and conservation through engaging and immersive experiences. We believe in the power of education and exploration to foster a deep connection between people and the natural world. By promoting awareness and understanding of endangered species and their habitats, we aim to contribute to the global effort of preserving biodiversity for future generations.</P>
+<p>Safari Tours: Embark on an exciting safari tour led by experienced guides who will introduce you to our collection of rare and beautiful animals, including lions, giraffes, elephants, and more.
+    Animal Encounters: Experience hands-on interactions with some of our friendliest residents and learn fascinating facts about their lives in the wild.
+    Educational Exhibits: Dive deep into the world of wildlife conservation through our engaging exhibits, which highlight the importance of protecting biodiversity and preserving natural ecosystems.
+    Adventure Playground: Let your little ones unleash their wild side at our adventure playground, complete with jungle-themed play structures and activities.</p>
+<p>Ready to embark on a safari adventure like no other? Plan your visit to Riget Zoo Adventures today! Explore our ticket options, check our opening hours, and discover the exciting events and programs we have in store for you.
+
+    Join us in celebrating the beauty and diversity of the animal kingdom at Riget Zoo Adventures, where every visit is an unforgettable journey into the wild!</p>
+</div>       
+
+<!--- ZOO SLIDESHOW CONTAINER-->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/zooss9.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/zooss5.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/zooss3.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+
+<div class="abouthotel">
+    <h1>About the Hotel</h1>
+    <p>Riget Zoo Adventure is not just a hotel; it's an immersive journey into the heart of the wild. Nestled within the scenic landscapes of our expansive zoo, our safari-themed hotel offers a one-of-a-kind experience for adventurers, nature enthusiasts, and families alike. Step into a world where luxury meets wildlife, and every moment is an opportunity for discovery and wonder.</p>
+    <P>Escape the ordinary and embrace the extraordinary at Riget Zoo Adventure. Whether you're seeking a romantic getaway, a family vacation, or a unique corporate retreat, our safari-themed hotel promises an unforgettable experience in harmony with nature. Book your safari stay today and embark on a journey of discovery, adventure, and relaxation like never before!</P>
+    <p>The Hotel offers complimentry Zoo passes when you stay as a guest, aswell as access to our swimming pool and spa facilities. We also offer a kids clubhouses, four in total for all different age ranges, Toddlers, Young Children, Tweens & Teens. There is fun for everyone here at Riget Zoo Adventures. During your stay, you are entitled to a buffet-style, breakfast, lunch and dinner included in the price of your stay.</p>
+    <h1>Our Accomadations</h1>
+    <p>Savanna Suites: Experience the vastness of the African savanna in our spacious suites, complete with panoramic views of roaming wildlife and luxurious amenities for a comfortable stay.
+        Jungle Bungalows: Find solace in the heart of the jungle with our cozy bungalows, surrounded by lush greenery and the sounds of exotic birds and animals.
+        Safari Tents: For a truly adventurous experience, opt for our safari tents nestled in secluded corners of the zoo, offering a blend of rustic charm and modern comfort.</p>
+
+
+</div>
+
+
+<div class="abouteducational">
+    <h1>About the Educational Visits</h1>
+   <p>Educational visits are a tour guided, information-pact learning experiences suitable for all ages, you will be led through all of our zoo facilites and attractions by a member of staff who will tell you many interesting facts about the different animals, their diets, enironment needs, their adaptations and much more! We offer many different packages to suit all different occations, such as school trips, birthday parties, or just a personal day out with some fun and interactive education! In every package, A tour guide is included, but for different packages, it can include a lunch for everyone included, a birthday venue aswell as a cake, leaflets about the zoo which can be kept as a token for the momory!</p>
+
+
+</div>
+
+
+   <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/backdrop.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 0% 0%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5bb84f;
+
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 60px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 45px;
+   
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+ 
+
+}
+
+.about-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 13px;
+    background: transparent;
+    position:relative;
+    
+}
+
+.about-btn:hover{
+    border: 1px solid #000000;
+    transition: 1s;
+}
+
+nav .fa{
+display:none;
+}
+
+@media(max-width 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #000000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: rgb(0, 0, 0);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #5bb84f;
+    color: rgb(0, 0, 0);
+    padding: 19px;
+    font-size: 18px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5bb84f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #4e9d44;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #5bb84f;}
+
+
+  /*CONTACT PAGE*/
+  .contactinfo{
+    float:right;
+    color:#000000;
+    position: absolute;
+    font-size: 35px;
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+   left: 29%;
+  }
+ 
+  .contactinfo h4{
+    font-size: 20px;
+    color: rgb(28, 73, 22);
+  }
+  
+
+  /*ABOUT PAGE WRITING*/
+  .aboutrza{
+    text-align: center;
+    position:inherit;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .aboutrza h1{
+    font-size: 30px;
+    text-decoration:underline;
+    padding-bottom: 20px;
+  }
+
+  .aboutrza p{
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .aboutzoo{
+    text-align: center;
+    padding-bottom: 40px;
+    position: inherit;
+  }
+
+  .aboutzoo h1{
+    font-size: 30px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+  }
+
+  .aboutzoo p{
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .abouthotel{
+    text-align: center;
+    padding-bottom: 40px;
+    position: inherit;
+  }
+
+  .abouthotel h1{
+    font-size: 30px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+  }
+
+  .abouthotel p{
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .abouteducational{
+    text-align: center;
+    padding-bottom: 40px;
+    position: inherit;
+  }
+
+  .abouteducational h1{
+    font-size: 30px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+  }
+
+  .abouteducational p{
+    font-size: 18px;
+    margin: 20px;
+  }
+
+
+
+  /*ABOUT PAGE SLIDESHOW*/
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  size-adjust: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+ align-items: center;
+ size-adjust: 30px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
